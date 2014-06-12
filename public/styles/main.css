@@ -16,11 +16,11 @@
   margin: 0;
 }
 article {
-  -webkit-transition: background 0.6s ease;
-  -moz-transition: background 0.6s ease;
-  -o-transition: background 0.6s ease;
-  -ms-transition: background 0.6s ease;
-  transition: background 0.6s ease;
+  -webkit-transition: background 0.8s ease;
+  -moz-transition: background 0.8s ease;
+  -o-transition: background 0.8s ease;
+  -ms-transition: background 0.8s ease;
+  transition: background 0.8s ease;
   display: none;
 }
 article.bespoke-parent {
@@ -43,11 +43,11 @@ article.bespoke-parent {
   }
 }
 .bespoke-slide {
-  -webkit-transition: -webkit-transform 0.6s ease, opacity 0.6s ease, background 0.6s ease;
-  -moz-transition: -moz-transform 0.6s ease, opacity 0.6s ease, background 0.6s ease;
-  -o-transition: -o-transform 0.6s ease, opacity 0.6s ease, background 0.6s ease;
-  -ms-transition: -ms-transform 0.6s ease, opacity 0.6s ease, background 0.6s ease;
-  transition: transform 0.6s ease, opacity 0.6s ease, background 0.6s ease;
+  -webkit-transition: -webkit-transform 0.8s ease, opacity 0.8s ease, background 0.8s ease;
+  -moz-transition: -moz-transform 0.8s ease, opacity 0.8s ease, background 0.8s ease;
+  -o-transition: -o-transform 0.8s ease, opacity 0.8s ease, background 0.8s ease;
+  -ms-transition: -ms-transform 0.8s ease, opacity 0.8s ease, background 0.8s ease;
+  transition: transform 0.8s ease, opacity 0.8s ease, background 0.8s ease;
   -webkit-transform-origin: 50% 50% 0;
   -moz-transform-origin: 50% 50% 0;
   -o-transform-origin: 50% 50% 0;
@@ -63,12 +63,6 @@ article.bespoke-parent {
   display: -webkit-flex;
   display: box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -ms-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
@@ -81,7 +75,6 @@ article.bespoke-parent {
   -ms-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  text-align: center;
   width: 640px;
   height: 480px;
   position: absolute;
@@ -89,8 +82,8 @@ article.bespoke-parent {
   margin-top: -240px;
   left: 50%;
   margin-left: -320px;
-  background: #eaeaea;
-  padding: 40px;
+  background: transparent;
+  padding: 5px;
   -webkit-border-radius: 0;
   border-radius: 0;
 }
@@ -104,19 +97,12 @@ article.bespoke-parent {
     margin: 0;
   }
 }
-.bespoke-before {
-  -webkit-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -moz-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -o-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  -ms-transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-  transform: translateX(100px) translateX(-320px) rotateY(-90deg) translateX(-320px);
-}
 .bespoke-after {
-  -webkit-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -moz-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -o-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  -ms-transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
-  transform: translateX(-100px) translateX(320px) rotateY(90deg) translateX(320px);
+  -webkit-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
+  -moz-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
+  -o-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
+  -ms-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
+  transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
 }
 @media print {
   .bespoke-after {
@@ -227,7 +213,7 @@ li.bespoke-bullet-inactive {
 }
 .emphatic,
 .emphatic .bespoke-slide {
-  background: #eaeaea;
+  background: transparent;
 }
 pre {
   padding: 26px !important;
@@ -242,7 +228,7 @@ body {
 h1 {
   font-size: 72px;
   line-height: 82px;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   margin-bottom: 16px;
 }
 h2 {
@@ -255,6 +241,8 @@ h2 {
 }
 .nama {
   background-color: transparent;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 .nong {
   background-image: url("nong.jpg");
@@ -313,8 +301,11 @@ li {
   margin-bottom: 12px;
 }
 p {
-  margin: 0 100px 12px;
+  margin: 0 50px 12px;
   line-height: 22px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #800000;
 }
 a {
   color: #0089f3;
