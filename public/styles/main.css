@@ -255,7 +255,41 @@ h2 {
 }
 .nama {
   background-color: transparent;
-  background-image: url("nong-toom.jpg");
+}
+.nong {
+  background-image: url("nong.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.dena {
+  background-image: url("dena.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.harisu {
+  background-image: url("harisu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.liu {
+  background-image: url("liu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.flor {
+  background-image: url("nong.jpg");
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
