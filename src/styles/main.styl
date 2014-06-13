@@ -4,11 +4,11 @@
 
 slide_width = 640px
 slide_height = 480px
-slide_background = #eaeaea
+slide_background = transparent
 
-slide_transition_length = .6s
+slide_transition_length = .8s
 slide_transition_easing = ease
-slide_transition_rotate_y = 90deg
+slide_transition_rotate_y = -300deg
 // Safari bugs out on 3d transform-origins, so we have to fake it
 slide_transition_nudge_x = -100px
 
@@ -48,6 +48,8 @@ article
       overflow: visible
       position: static
     perspective: 600px
+    background-image: url(pastel.jpg)
+    background-repeat: no-repeat
 
 .bespoke-slide
   transition:
@@ -57,10 +59,8 @@ article
   transform-origin: 50% 50% 0
   backface-visibility: hidden
   display: flex
-  flex-direction: column
   justify-content: center
   align-items: center
-  text-align: center
   width: slide_width
   height: slide_height
   position: absolute
@@ -69,7 +69,7 @@ article
   left: 50%
   margin-left: (slide_width / 2) * -1
   background: slide_background
-  padding: 40px
+  padding: 5px
   border-radius: 0
   @media print
     zoom: 1 !important // disable bespoke-scale
@@ -78,9 +78,6 @@ article
     page-break-before: always
     position: static
     margin: 0
-
-.bespoke-before
-  transform: translateX(slide_transition_nudge_x * -1) translateX(slide_width / -2) rotateY(slide_transition_rotate_y * -1) translateX(slide_width / -2)
 
 .bespoke-after
   transform: translateX(slide_transition_nudge_x) translateX(slide_width / 2) rotateY(slide_transition_rotate_y) translateX(slide_width / 2)
@@ -140,7 +137,7 @@ article
   transition: width .6s ease
   position: absolute
   height: 100%
-  background: #0089f3
+  background: #990099
   border-radius: 0 4px 4px 0
 
 // bespoke-state styles
@@ -165,7 +162,7 @@ body
 h1
   font-size: 72px
   line-height: 82px
-  letter-spacing: -2px
+  letter-spacing: 2px
   margin-bottom: 16px
 
 h2
@@ -178,6 +175,7 @@ h2
 
 .nama
   background-color: transparent
+  border-radius: 10px
 
 .nong
   background-image: url(nong.jpg)
@@ -226,9 +224,16 @@ li
   margin-bottom: 12px
 
 p
-  margin: 0 100px 12px
+  margin: 0 50px 12px
   line-height: 22px
+  font-size : 20px
+  letter-spacing : 2px
+  color : maroon
 
 a
   color: #0089f3
   text-decoration: none
+  
+.tim
+  text-shadow: 2px 2px 2px rgba(150,150,150, 5)
+  color: pink
