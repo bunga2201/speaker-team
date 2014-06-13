@@ -35,6 +35,8 @@ article.bespoke-parent {
   -moz-perspective: 600px;
   -ms-perspective: 600px;
   perspective: 600px;
+  background-image: url("pastel.jpg");
+  background-repeat: no-repeat;
 }
 @media print {
   article.bespoke-parent {
@@ -207,7 +209,7 @@ li.bespoke-bullet-inactive {
   transition: width 0.6s ease;
   position: absolute;
   height: 100%;
-  background: #0089f3;
+  background: #909;
   -webkit-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
 }
@@ -310,4 +312,8 @@ p {
 a {
   color: #0089f3;
   text-decoration: none;
+}
+.tim {
+  text-shadow: 2px 2px 2px #969696;
+  color: #ffc0cb;
 }
