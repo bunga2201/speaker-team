@@ -77,13 +77,13 @@ article.bespoke-parent {
   -ms-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  width: 640px;
+  width: 900px;
   height: 480px;
   position: absolute;
   top: 50%;
   margin-top: -240px;
   left: 50%;
-  margin-left: -320px;
+  margin-left: -450px;
   background: transparent;
   padding: 5px;
   -webkit-border-radius: 0;
@@ -100,11 +100,11 @@ article.bespoke-parent {
   }
 }
 .bespoke-after {
-  -webkit-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
-  -moz-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
-  -o-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
-  -ms-transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
-  transform: translateX(-100px) translateX(320px) rotateY(-300deg) translateX(320px);
+  -webkit-transform: translateX(-100px) translateX(450px) rotateY(-300deg) translateX(450px);
+  -moz-transform: translateX(-100px) translateX(450px) rotateY(-300deg) translateX(450px);
+  -o-transform: translateX(-100px) translateX(450px) rotateY(-300deg) translateX(450px);
+  -ms-transform: translateX(-100px) translateX(450px) rotateY(-300deg) translateX(450px);
+  transform: translateX(-100px) translateX(450px) rotateY(-300deg) translateX(450px);
 }
 @media print {
   .bespoke-after {
@@ -240,6 +240,7 @@ h2 {
   letter-spacing: 5px;
   margin-bottom: 8px;
   font-variant: small-caps;
+  padding-top: 100px;
 }
 .nama {
   background-color: transparent;
@@ -250,17 +251,14 @@ h2 {
   background-image: url("nong.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
 }
 .dena {
   background-image: url("dena.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  background-size: auto;
 }
 .harisu {
   background-image: url("harisu.jpg");
@@ -303,7 +301,8 @@ li {
   margin-bottom: 12px;
 }
 p {
-  margin: 0 50px 12px;
+  margin-left: 100px;
+  margin-right: 20px;
   line-height: 22px;
   font-size: 20px;
   letter-spacing: 2px;
@@ -316,4 +315,18 @@ a {
 .tim {
   text-shadow: 2px 2px 2px #969696;
   color: #ffc0cb;
+}
+img {
+  float: right;
+  clear: both;
+  width: 200px;
+  padding: 10px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+.floren {
+  background-image: url("fdl.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
 }
